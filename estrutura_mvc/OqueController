@@ -1,0 +1,31 @@
+<?php 
+
+/*Controler é a camda intermeidaria entre o Model, a View e qual quer outro recurso
+/necessario para processar a requisição HTTP e gerar a pagina web. De modo geral o controller
+/é simplismente um arquivo de classe que é nomeado de forma que possa associado a uma URL
+*/
+
+//Exemplo de Controler
+
+class Nome_do_controller extends Controler {
+
+	public function Index() {
+		
+		Aqui faz alguma coisa
+		
+	}
+}
+
+
+/*
+/URL_BASE É A URL PADRAO DO PROJETO. EX:WWW.GOOGLE.COM OU LOCALHOST/PROJETO
+
+/Controler EX: MJAILTON/CONTATOS/CADASTRAR (CONTROLLER E METODO DENTRO DO CONTROLER(AÇÃO(ACTION)))
+
+/Quando abrir uma URL e nao definir o que quer fazer (Ex:MJAILTON/CONTATOS/CADASTRAR)
+/ele abre o arquivo que estiver definido como metodopadrao denteo do controler(index por exemplo)
+
+/Se abri apenas a URL base chama o controller defalt configurado na rota do metodo index, dentro do controller
+*/
+?>
+
