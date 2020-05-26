@@ -8,7 +8,7 @@ use app\core\Controller;
 class HomeController extends Controller{
     
    public function index(){
-	   $dados = array();
+	   $dados["view"] = "home";
        $this -> load("tamplate", $dados);
    } 
 }

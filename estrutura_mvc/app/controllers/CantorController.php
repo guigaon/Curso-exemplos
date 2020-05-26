@@ -7,8 +7,8 @@ use app\models\Cantor;
 class CantorController extends Controller{
 
 	public function index (){
-		objCantor = new Cantor ();
-		$dados["lista"] = objCantor->listaCantor; //pega a lista de cantores e salva em "lista"
+		$objCantor = new Cantor ();
+		$dados["lista"] = $objCantor->listaCantor; //pega a lista de cantores e salva em "lista"
  		$dados["view"] = "Cantor/lista";
 		$this->load("template" , $dados); 
 		
