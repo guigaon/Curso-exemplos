@@ -2,7 +2,7 @@
 		<h1>Cadastro</h1>
 		<fieldset>
 			<legend>Lista</legend>
-			<a href="cadastro.html" class="btn float-right" style="top:-30px">Inserir novo</a>
+			<a href="<?php echo URL_BASE . "cliente/cadastro" ?>" class="btn float-right" style="top:-30px">Inserir novo</a>
 			<table cellpadding="0" cellspacing="0" width="100%" border="0">
 				<thead>
 					<tr>

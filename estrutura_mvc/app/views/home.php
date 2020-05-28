@@ -7,22 +7,22 @@
 				<p>Seja bem vindo a jornada do programador</p>
 					<div class="rows">
 						<div class="col-6 p2">
-							<a href="formas.php" class="btn">
+							<a href = "<?php echo URL_BASE . "area" ?>" class="btn">
 								<i class="fas fa-shapes"></i> Ir Formas geométrica
 							</a>
 						</div>
 						<div class="col-6 p2">
-							<a href="lista.php" class="btn">
+							<a href="<?php echo URL_BASE . "cliente" ?>" class="btn">
 								<i class="fas fa-th-list"></i> Ir para lista
 							</a>
 						</div>
 						<div class="col-6 p2">
-							<a href="cadastro.php" class="btn"> 
+							<a href="<?php echo URL_BASE . "cliente/cadastro" ?>" class="btn"> 
 							 <i class="fas fa-plus-square"></i> Ir para Cadastro
 							</a>
 						</div>
 						<div class="col-6 p2">
-							<a href="resultado.php" class="btn"> 
+							<a href="<?php echo URL_BASE . "resultado" ?>" class="btn"> 
 								<i class="fas fa-check"></i> Ir para resultado
 							</a>
 						</div>
