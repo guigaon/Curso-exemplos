@@ -1,7 +1,7 @@
 <div id="menu">
 			<div class="menu-lateral">
 			<figure>
-					<div class="thumb"><img src="img/foto01.png"></div>
+					<div class="thumb"><img src="<?php echo URL_BASE?>assets/img/foto01.png"></div>
 					<figcaption>
 						<strong>Manoel jailton</strong>
 						<small>Em andamento</small>

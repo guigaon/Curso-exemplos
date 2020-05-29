@@ -6,7 +6,7 @@
         <div class="rows detalhes py-3">
 			<div class="col-4">
 				<figure class="caixa">
-					<div class="thumb"><img src="img/foto01.png"></div>
+					<div class="thumb"><img src="<?php echo URL_BASE?>assets/img/foto01.png"></div>
 					<figcaption>
 							<strong>Manoel jailton</strong>
 							<small><b>Seu tutor nos cursos</b></small>
@@ -51,15 +51,15 @@
 									</tr>
 								</thead>
 								<tbody>
-									<tr><td><a href="curso.html">Curso de Java</a></td></tr>                   
-									<tr><td><a href="curso.html">Curso de lógica de programação</a></td></tr> 
-									<tr><td><a href="curso.html">Curso de frontend</a></td></tr> 
-									<tr><td><a href="curso.html">Curso de android</a></td></tr> 
-									<tr><td><a href="curso.html">Curso de PHP</a></td></tr> 
-									<tr><td><a href="curso.html">Curso de Java</a></td></tr> 
-									<tr><td><a href="curso.html">Curso de lógica de programação</a></td></tr> 
-									<tr><td><a href="curso.html">Curso de frontend</a></td></tr> 
-									<tr><td><a href="curso.html">Curso de android</a></td>		</tr> 		
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de Java</a></td></tr>                   
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de lógica de programação</a></td></tr> 
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de frontend</a></td></tr> 
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de android</a></td></tr> 
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de PHP</a></td></tr> 
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de Java</a></td></tr> 
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de lógica de programação</a></td></tr> 
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de frontend</a></td></tr> 
+									<tr><td><a href="<?php echo URL_BASE . "curso"?>">Curso de android</a></td>		</tr> 		
 								</tbody>
 							</table>
 							</div>

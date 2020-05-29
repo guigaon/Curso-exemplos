@@ -13,7 +13,7 @@
 						<li><a href="">Delphi</a></li>
 					</ul>
 				</li>
-				<li class="sub user"><a href="" class="thumb"><img src="img/foto01.png"></a>
+				<li class="sub user"><a href="" class="thumb"><img src="<?php echo URL_BASE?>assets/img/foto01.png"></a>
 					<ul>
 						<li><b>Manoel jailton</b><small><a href="">Sair</a></small></li>
 					</ul>
