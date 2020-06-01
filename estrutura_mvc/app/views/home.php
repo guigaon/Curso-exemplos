@@ -12,12 +12,12 @@
 							</a>
 						</div>
 						<div class="col-6 p2">
-							<a href="<?php echo URL_BASE . "cliente" ?>" class="btn">
+							<a href="<?php echo URL_BASE . "cantor" ?>" class="btn">
 								<i class="fas fa-th-list"></i> Ir para lista
 							</a>
 						</div>
 						<div class="col-6 p2">
-							<a href="<?php echo URL_BASE . "cliente/cadastro" ?>" class="btn"> 
+							<a href="<?php echo URL_BASE . "cantor/criar" ?>" class="btn"> 
 							 <i class="fas fa-plus-square"></i> Ir para Cadastro
 							</a>
 						</div>

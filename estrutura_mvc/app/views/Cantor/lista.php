@@ -9,55 +9,28 @@
 		<h1>Cadastro</h1>
 		<fieldset>
 			<legend>Lista de Cantores</legend>
-			<a href="cadastro.html" class="btn float-right" style="top:-30px">Inserir novo</a>
+			<a href="<?php echo URL_BASE . "cantor/criar "?>" class="btn float-right" style="top:-30px">Inserir novo</a>
 			<table cellpadding="0" cellspacing="0" width="100%" border="0">
 				<thead>
 					<tr>
-						<th>Nome</th>
-						<th>Email</th>
-						<th>Telefone</th>
+						<th>ID</th>
+						<th>Nome do Cantor</th>
 						<th>Ação</th>
 					</tr>
 				</thead>
 				<tbody>
 				<?php 
-					foreach($cantores as $cantor)	?>
+					foreach($cantores as $cantor) {	?>
 					<tr>
-						<td align="center">Manoel jailton sousa</td>
-						<td align="center">mjailton@gmail.com</td>
-						<td align="center">999924667</td>
+						<td align="center"><?php echo $cantor["id_cantor"]?></td>
+						<td align="center"><?php echo $cantor["cantor"]?></td>
+		
 						<td align="center">
-							<a href="cadastro.html" class="btn">Excluir</a>
-							<a href="cadastro.html" class="btn">Editar</a>
+							<a href="<?php echo URL_BASE . "cantor/excluir "?>" class="btn">Excluir</a>
+							<a href="<?php echo URL_BASE . "cantor/editar "?>"  class="btn">Editar</a>
 						</td>
 					</tr>
-					<tr>
-						<td align="center">Manoel jailton sousa</td>
-						<td align="center">mjailton@gmail.com</td>
-						<td align="center">999924667</td>
-						<td align="center">
-							<a href="cadastro.html" class="btn">Excluir</a>
-							<a href="cadastro.html" class="btn">Editar</a>
-						</td>
-					</tr>
-					<tr>
-						<td align="center">Manoel jailton sousa</td>
-						<td align="center">mjailton@gmail.com</td>
-						<td align="center">999924667</td>
-						<td align="center">
-							<a href="cadastro.html" class="btn">Excluir</a>
-							<a href="cadastro.html" class="btn">Editar</a>
-						</td>
-					</tr>
-					<tr>
-						<td align="center">Manoel jailton sousa</td>
-						<td align="center">mjailton@gmail.com</td>
-						<td align="center">999924667</td>
-						<td align="center">
-							<a href="cadastro.html" class="btn">Excluir</a>
-							<a href="cadastro.html" class="btn">Editar</a>
-						</td>
-					</tr>
+				<?php }?>
 				</tbody>
 			<table>
 		</fieldset>
