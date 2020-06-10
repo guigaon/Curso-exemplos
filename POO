@@ -1,0 +1,44 @@
+<?php
+
+Classe
+
+	Classe é um tipo de dado definido pelo usuario, que tem um estado (sua representação) e algumas operações (seu comportamento). Uma classe possui alguns dados
+	internos e alguns metodos, na forma de "funções" e normalmente descreve caracteristicas genericas de varios objetos semelhantes
+	É como um modelo (prototipo) que define as variaveis (estado) e os metodos (comportamento) comuns a todos os objetos do mesmo tipo
+	
+Objeto
+
+	Um objeto é uma instancia de uma classe ou uma variavel do tipo de dados definido pela classe. Os objetos são entidades reais. 
+	Quando o programa é executado, os objetos ocupam memoria para usa representação interna. O relacionamento entre classe e objeto é o mesmo que existe entre variavel e tipo
+	
+Atributo
+
+	São as caracteristicas que definem o objeto, ou seja, representam a constituição do objeto e definem a estrutura do mesmo. Os atributos podem armazenar valores como outros objetos
+	
+Metodos
+
+	O metodo define o comportamento de um objeto - tudo o que acontece quando o objeto é criado e as diversas tarefas que realziar durante sua existecia , ou seja, são as ações que o objeto pode realizar
+	para modificar a sí próprio ou para algum efeito externo
+	
+Construtor 
+
+	Construtor é um método especial utilizado para definir o comportamento inicial de um objeto, ou seja, o comportamento no momento de sua criação. O método construtor é executado automaticamente
+	no momento em que instanciamos um objeto por meio do operador new
+	Caso não seja definica um metodo construtor, automaticamente todas as propriedados do objeto criado são inicializadas com o valor NULL
+	Para definir um método construtor em uma determinada classe basta declarar o metodo __construct()
+	
+Destrutor
+
+	Destrutor ou finalziador é um método especial executado automaticamente quando o objeto é desalocado da memória, quando atribuímos o valor NULL ao objeto, quando utilizamos a função unset() sobre o mesmo
+	ou em ultima instancia, quando o programa é finalizado
+	
+	O método destrutor pode ser utilizado para finalizar conexões, apagar arquivos temporarios criados durante o ciclo de vida do objeto, dentre outras circunstâncias.
+	
+	Para definir um método destrutor em uma determinada classe basta declarar o método __destruct()
+
+
+
+
+
+
+?>
