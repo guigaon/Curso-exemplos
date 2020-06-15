@@ -12,11 +12,11 @@
 					
 					<li><a href="<?php echo URL_BASE . "meuscursos"?>"><i class="ico curso"></i>MEUS CURSOS</a></li>
 					
-					<li><a href="<?php echo URL_BASE ."perfil"?>"><i class="ico perfil"></i>MEU PERFIL</a></li>
+					<li><a href="<?php echo URL_BASE . "perfil"?>"><i class="ico perfil"></i>MEU PERFIL</a></li>
 					
-					<li><a href="<?php echo URL_BASE ."comentario"?>"><i class="ico duvida"></i>COMENTÁRIOS</a></li>
+					<li><a href="<?php echo URL_BASE . "comentario"?>"><i class="ico duvida"></i>COMENTÁRIOS</a></li>
 					
-					<li><a href="<?php echo URL_BASE ."login/logoff"?>"><i class="ico sair"></i>SAIR</a></li>
+					<li><a href="<?php echo URL_BASE . "login/logoff"?>"><i class="ico sair"></i>SAIR</a></li>
 			</ul>
 			</div>
 		</div>     

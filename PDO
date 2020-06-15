@@ -1,0 +1,32 @@
+PDO (PHP Data Objects) é uma extensão que fornece uma interface padronizada para trabalhar com banco de dados, 
+cuja a finalidade é abstrair a conexão e interações com os bancos, ou seja, independente do banco de dados
+que estiver sendo utilizado, os métodos executados serão os mesmos
+
+Vantagens do PDO
+
+Abstração de conexão e interação do banco de dados
+Segurança
+Suporte a diversos drivers
+
+
+	
+exec 
+
+	Executa uma instrução SQL em uma unica chamada de função, retornando o número de linhas afetadas pela instrução
+	
+	PDO::exec() não retorna resultados de uma instrução SELECT
+	
+	PDO::exec () pode ser utilizado para inserir, editar ou excluir e retorna o numero de linha afetadas
+
+
+
+Quando uma conexão é aberta podemos interagir com banco utilizando tres métodos da classe PDO
+
+PDO::exec()
+	utilizado para inserir, editar ou excluir e retorna o numero de linhas afetadas
+	
+PDO::query()
+	executa uma instrução SQL, retornando um conjunto de resultados como um objeto PDOstatement
+	
+PDO::prepare()
+	Prepara uma instrução SQL para ser executado pelo PDOStetament::execute()

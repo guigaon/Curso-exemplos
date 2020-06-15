@@ -1,3 +1,5 @@
+<?php var_dump($curso)?>
+
 <div class="caixa">
 			<h2 class="titulo"><span class="case"><i class="ico duvida"></i>Curso</span> Curso de Front-end</h2>
 		</div>
