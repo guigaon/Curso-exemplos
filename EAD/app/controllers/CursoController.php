@@ -2,6 +2,7 @@
 namespace app\controllers;
 use app\core\Controller;
 use app\models\Curso;
+use app\models\Aula;
 
 class CursoController extends Controller {
 	
@@ -12,11 +13,14 @@ class CursoController extends Controller {
 	
 	public function detalhes ($id_curso){
 		$objCurso 		= new Curso();
+		$objAula		= new Aula();
 		
-		$dados["curso"] = $objCurso->getCurso(id_curso);
+		$dados["curso"] = $objCurso->getCurso($id_curso);
+		$dados["aulas"] = $objAula->getAula($id_curso);
 		$dados["view"]	= "Curso/index";
 		$this->load("tamplate", $dados);
 	}
+	
 	
 }
 

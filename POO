@@ -36,7 +36,44 @@ Destrutor
 	
 	Para definir um método destrutor em uma determinada classe basta declarar o método __destruct()
 
+Herança
 
+	é uma forma de reutilização de código em que novas classes são criadas a partir de classes existemntes, absovendo seus atributos e comportamentos, complementando-os com novas necessidades
+	
+	As classes com nivel hierarquico superior, podem ser intituladas com classe-base, classe-mae, classe-pai, superclasses ou ainda outra atribuição que se refira á sua superioridade. 
+	Já as classes herdeiras, assim podem ser chamadas, mas também, classe-filha, subclasse ou classe derivada
+	
+	
+Polimorfismo
+
+	É o princípio que permite que classes derivadas de uma mesma superclasse tenham métodos iguais (com as mesma nomenclatura e parâmetros), mas comportamentos diferente, redefinidos em cada
+	uma das classes-filhas, Algumas caracteristicas do polimorfismo são:
+	
+	Facilita a reutilização de código. Para que um objeto utilize alguma funcionalidade de outro ele só precisa conhecer a assinatura de um método, por exemplo, e não usa implementação.
+	
+	Facilita a manutenção, visto que não é preciso utilizar varias estruturas condicionais para simular alguma situação diferente.
+
+Abstrair
+	é separar mentalmente, considerar isoladamente, simplificar, alhear-se.
+	Para construir um sistema orientado a objeto, não devemos projetar o sistema como sendo uma grande peça monolítica; devemos separa-lo em partes, podermos construir peças bem definidas que
+	possam ser reaproveitadas mais tarde, formando uma estrutura hierárquica
+	
+Metodos magicos
+
+__set()
+
+	Intercepta a atribuição de valores a propriedades do objeto. Sempre que for atribuído um valor a uma propriedade do objeto, automaticamente está atribuição passa pelo método __set(), o qual recebe o nome da propriedade
+	e o valor a ser atribuído, podendo atribui-lo ou nao.
+
+__get()
+	
+	Intercepta requisições de propriedades do objeto. Sempre que for requisitada uma propriedade, automaticamente essa requisição passará pelo método __get(), o qual recebe o nome
+	da propriedade requisitada, podendo retorna-la ou não
+	
+__call()
+
+	Intercepta a chamada a métodos. Sempre que for executado um método que não existir no objeto, automaticamente a execução sera direcionada para ele, que recebe dois parametros
+	, o nome requisitado e o parametro recebido, podendo decidir o procedimento a realizar 
 
 
 

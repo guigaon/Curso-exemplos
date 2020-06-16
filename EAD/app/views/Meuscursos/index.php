@@ -13,7 +13,7 @@
                                         <p><?php echo $curso["curso"]?></p>
                                         <small>Desempenho <b>50%</b></small>
                                         <progress value="4" max="7"></progress>
-                                        <a href="<?php echo URL_BASE . "curso/" . $curso ["id_curso"]?>" class="btn">Ir para o curso</a>
+                                        <a href="<?php echo URL_BASE . "curso/detalhes/" . $curso ["id_curso"]?>" class="btn">Ir para o curso</a>
                                 </div>
                         </div>
                 </div>
