@@ -16,7 +16,7 @@ class Aula extends Model {
 		
 	}
 	
-	public function Aula1($id_aula){
+	public function AssitirAula($id_aula){
 		$sql = "SELECT * FROM aula WHERE id_aula = :id_aula";
 		
 		$qry = $this->db->prepare($sql);

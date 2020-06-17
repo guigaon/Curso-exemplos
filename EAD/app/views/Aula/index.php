@@ -1,5 +1,3 @@
-<?php var_dump($aula)?>
-
 <div class="caixa">
 				<h2 class="titulo"><span class="case"><i class="ico curso"></i>Formação Front-end</span> Módulo 01 <i class="seta"></i> Capitulo 01 <i class="seta"></i> Aula 01</h2>
 			</div>
@@ -10,7 +8,7 @@
 							<span class="titulo2"><?php echo $aula["aula"] ?></span>
 							<div class="caixa-video">
 								<div class="caixa-embed">
-									<iframe src="https://www.youtube.com/embed/13QshaUKVW4?ecver=2" class="embed-item" width="655" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+									<iframe src="https://www.youtube.com/embed/<?php echo $aula["embed_youtube"]?>" class="embed-item" width="655" height="360" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 								</div>
 								<div class="controles">
 									<a href="" class="btn anterior">Anterior</a>
@@ -26,46 +24,13 @@
 						<span class="titulo2">Lista de aulas</span>
 						<div class="scroll-lista">
 							<ul>				
+						<?php foreach ($todas_aulas as $aula) { ?>
 								<li class="marcado">
-									<a href="">
-										Apresentação do Curso de HTML	
+									<a href="<?php echo URL_BASE . "aula/assistir/" . $aula["id_aula"]?>">
+										<?php echo $aula["aula"]?>	
 									</a>
 								</li>				
-								<li class="marcado">
-									<a href="">
-										Aula 02 - Conceitos iniciais								
-									</a>
-								</li>		
-								<li class="marcado">
-									<a href="">
-										Aula 03 - Conceituando HTML								
-									</a>
-								</li>		
-								<li class="naomarcado">
-									<a href="">
-										Aula 04 - Criando a primeira página	
-									</a>
-								</li>	
-								<li class="naomarcado">
-									<a href="">
-										Aula 04 - Criando a primeira página	
-									</a>
-								</li>	
-								<li class="naomarcado">
-									<a href="">
-										Aula 04 - Criando a primeira página	
-									</a>
-								</li>	
-								<li class="naomarcado">
-									<a href="">
-										Aula 04 - Criando a primeira página	
-									</a>
-								</li>	
-								<li class="naomarcado">
-									<a href="">
-										Aula 04 - Criando a primeira página	
-									</a>
-								</li>
+						<?php } ?>	
 							</ul>
 						</div>
 					</div>	
