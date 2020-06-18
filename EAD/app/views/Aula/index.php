@@ -24,13 +24,18 @@
 						<span class="titulo2">Lista de aulas</span>
 						<div class="scroll-lista">
 							<ul>				
-						<?php foreach ($todas_aulas as $aula) { ?>
-								<li class="marcado">
+									<?php 
+									foreach ($aulas as $aula) { 
+											$assistido = ($aula["assistido"]) ? "marcado" : "naomarcado";
+										
+									
+									?>
+								<li class="<?php echo $assistido ?>">
 									<a href="<?php echo URL_BASE . "aula/assistir/" . $aula["id_aula"]?>">
 										<?php echo $aula["aula"]?>	
 									</a>
 								</li>				
-						<?php } ?>	
+									<?php } ?>	
 							</ul>
 						</div>
 					</div>	
