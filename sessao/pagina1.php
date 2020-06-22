@@ -1,4 +1,11 @@
-<?php session_start() ?>
+<?php session_start() ;
+if(!$_SESSION["cliente"]){
+	header("location:index.php"); //manda de volta para o index
+}
+
+?>
+
+
 <!doctype html>
 <html>
 	<head>
@@ -7,8 +14,8 @@
 	</head>
 	<body>
 			
-				<?php var_dump($_SESSION) ?>
-				<?php echo @$_POST["txtusuario"]?>
+				
+				<?php echo @$_SESSION["cliente"]?>
 				<p><a href="pagina2.php"> ir para pagina 2
 	
 	</body>
