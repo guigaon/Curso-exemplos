@@ -18,7 +18,7 @@ class login extends Model {
 	}
 	
 	public function retornaIdCliente(){
-		$id_cliente = isset($_SESSION["clienteLogado"]) ? $_SESSION["clienteLogado"]["id_cliente"] : NULL;
+		$id_cliente = isset($_SESSION[SESSION_LOGIN]) ? $_SESSION[SESSION_LOGIN]["id_cliente"] : NULL;
 		
 		return $id_cliente;
 		

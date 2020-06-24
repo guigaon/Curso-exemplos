@@ -20,16 +20,29 @@ class LoginController extends Controller {
 		$cliente = $objLogin->logar($email, $senha);
 		
 		if($cliente){
-			$_SESSION["clienteLogado"] = $cliente;
+			$_SESSION[SESSION_LOGIN] = $cliente; //Refefini a SESSION em config.php
 			header("location:" . URL_BASE);	
 		}else{	
-			unset($_SESSION["clienteLogado"]);
+			unset($_SESSION[SESSION_LOGIN]);
 			echo"cliente não encontrado";
 		}
 		
 		
 		
 	}
+	
+	public function logoff(){
+		unset($_SESSION[SESSION_LOGIN]);
+		header("location:" . URL_BASE);	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

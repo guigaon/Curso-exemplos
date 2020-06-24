@@ -11,3 +11,4 @@ define('METODO_PADRAO', 'index');
 define('NAMESPACE_CONTROLLER', 'app\\controllers\\');
 
 define('URL_BASE', 'http://localhost/curso-exemplos/EAD/');
+define('SESSION_LOGIN', 'clienteLogado');
