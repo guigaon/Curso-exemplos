@@ -30,7 +30,7 @@ class DB{
 	//cria uma nova instancia do $pdo
 	public function getDb(){
 		if(self::$pdo==null){ //quando é estatico, tem que chamar com "self"
-				self::$pdo = new PDO ("mysql=dbname=" . BANCO . ":host=" . SERVIDOR,
+				self::$pdo = new PDO ("mysql:dbname=" . BANCO . ";host=" . SERVIDOR,
 									USUARIO, SENHA, array(PDO::MYSQL_ATTR_INIT_COMMAND=>"SET NAMES utf8"));
 			
 		}
