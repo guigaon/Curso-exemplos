@@ -1,6 +1,6 @@
 <?php
 define("SERVIDOR", "localhost");
-define("BANCO", "pedido");
+define("BANCO", "pedido_php");
 define("USUARIO", "root");
 define("SENHA", "");
 define("CHARSET","UTF8");
